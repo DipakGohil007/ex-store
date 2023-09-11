@@ -1,0 +1,25 @@
+@import "../../../../styles/global.scss";
+
+.expertise-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 21px;
+  align-items: center;
+  justify-content: center;
+
+  .expertise-icon {
+    margin-bottom: 21px;
+  }
+
+  .expertise-desc {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: center;
+
+    @media (max-width: 400px) {
+      max-width: 270px;
+    }
+  }
+}

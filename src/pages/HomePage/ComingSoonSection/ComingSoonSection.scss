@@ -1,0 +1,53 @@
+@import "../../../styles/global.scss";
+
+.coming-soon-section {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+  background-color: $color-black-400;
+
+  .main-title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    color: $color-grey-50;
+    margin-bottom: 24px;
+
+    @media (max-width: 576px) {
+      font-size: 30px;
+    }
+  }
+
+  .game-cards-galary {
+    display: flex;
+    gap: 16px;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+
+    .large-cards-wrapper {
+      display: flex;
+      gap: 16px;
+      flex-direction: column;
+
+      @media (max-width: 768px) {
+        flex-wrap: wrap;
+      }
+    }
+
+    .med-cards-wrapper {
+      @extend .large-cards-wrapper;
+    }
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 576px) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
+}

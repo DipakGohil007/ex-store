@@ -1,0 +1,44 @@
+@import "../../../../styles/global.scss";
+
+.best-seller-slider {
+  .swiper {
+    height: 350px;
+    position: unset;
+    user-select: none;
+
+    .swiper-button-prev {
+      width: 36px;
+      height: 36px;
+      border: 1px solid $color-grey-25;
+      border-radius: 50%;
+      background: $color-white;
+      left: -15px;
+      top: 140px;
+
+      &::after {
+        font-size: 20px;
+      }
+
+      @media (max-width: 576px) {
+        display: none;
+      }
+    }
+
+    .swiper-button-next {
+      @extend .swiper-button-prev;
+      left: unset;
+      right: -15px !important;
+    }
+
+    .swiper-button-disabled {
+      display: none;
+    }
+
+    @media (max-width: 576px) {
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
