@@ -58,6 +58,11 @@
       background-color: transparent;
       color: $color-white;
     }
+
+    @media (max-width: 586px) {
+      left: 25px;
+      bottom: 25px;
+    }
   }
 
   @media (max-width: 768px) {

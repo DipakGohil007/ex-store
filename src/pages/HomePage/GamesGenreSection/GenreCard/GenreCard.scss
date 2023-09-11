@@ -35,4 +35,9 @@
       transition: all 0.3s ease;
     }
   }
+
+  @media (max-width: 576px) {
+    height: 140px;
+    width: 140px;
+  }
 }
